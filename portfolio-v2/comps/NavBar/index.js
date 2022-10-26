@@ -1,6 +1,8 @@
 import React from 'react'
 import styled from 'styled-components';
 import { useRouter } from 'next/router'
+import LinkedInIcon from '../icons/LinkedInIcon';
+import GithubIcon from '../icons/GithubIcon/Index';
 
 const Container = styled.div`
     width:100%;
@@ -50,7 +52,18 @@ const SecondaryNavContainer = styled.div`
     width:33%;
     height:100%;
     display:flex;
+    justify-content:flex-end;
+    align-items:center;
+    padding-right:50px;
 `;
+
+const IconContainer = styled.div`
+width:85px;
+height:100%;
+display:flex;
+justify-content:space-between;
+align-items:center;
+`
 
 const Links = styled.a`
     color:#323232;
@@ -84,7 +97,10 @@ const NavBar = ({
             <Links onClick={()=>router.push("/")}>About</Links>
         </PrimaryNavContainer>
         <SecondaryNavContainer>
-
+            <IconContainer>
+                <LinkedInIcon></LinkedInIcon>
+                <GithubIcon></GithubIcon>
+            </IconContainer>
         </SecondaryNavContainer>
     </Container>
 }

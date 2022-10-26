@@ -40,7 +40,7 @@ font-weight: 400;
 font-size: 24px;
 line-height: 27px;
 color: #0C26AE;
-margin:15px 0px 0px 0px;
+margin:15px 0px 5px 0px;
 
 `
 
